@@ -1,6 +1,7 @@
+import { FeatureCourses } from "@/components/FeatureCourses";
 import Hero from "@/components/Hero";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
-import FeatureCourses from "@/components/ui/FeatureCourses";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
 
 export default function page() {
   return (
@@ -8,6 +9,7 @@ export default function page() {
       <MaxWidthWrapper>
         <Hero />
         <FeatureCourses />
+        <WhyChooseUs />
       </MaxWidthWrapper>
     </main>
   );

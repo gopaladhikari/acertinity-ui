@@ -2,7 +2,7 @@
 
 import courseData from "@/data/music_courses.json";
 import Link from "next/link";
-import { BackgroundGradient } from "./background-gradient";
+import { BackgroundGradient } from "./ui/background-gradient";
 
 interface Course {
   id: number;
@@ -14,7 +14,7 @@ interface Course {
   isFeatured: boolean;
 }
 
-export default function FeatureCourses() {
+export function FeatureCourses() {
   const featuredCourses = courseData.courses.filter(
     (course: Course) => course.isFeatured
   );
