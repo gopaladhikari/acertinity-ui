@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
+import { SparklesCore } from "./ui/sparkles";
 
 export default function Hero() {
   return (
@@ -9,10 +10,18 @@ export default function Hero() {
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-      <div className="relative z-10 w-full p-4 text-center">
+      <div className="relative z-10 w-full p-8 text-center">
         <h1 className="mt-20 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-4xl font-bold text-transparent md:mt-0 md:text-7xl">
           Master the art of music
         </h1>
+        <SparklesCore
+          background="transparent"
+          minSize={0.4}
+          maxSize={1}
+          particleDensity={200}
+          className="absolute inset-0 z-0 mx-auto size-full"
+          particleColor="#FFFFFF"
+        />
         <p className="mx-auto mt-4 max-w-lg text-base font-normal text-neutral-300 md:text-lg">
           Dive into our comprehensive music courses and transform your musical
           journey today. Whether you&lsquo;re a beginner or looking to refine
