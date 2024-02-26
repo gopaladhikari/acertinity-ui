@@ -1,15 +1,19 @@
 import { FeatureCourses } from "@/components/FeatureCourses";
 import Hero from "@/components/Hero";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
+import { Testimonials } from "@/components/Testimonials";
+import { Webinar } from "@/components/Webinar";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 
 export default function page() {
   return (
-    <main className="bg-grid-white/[0.02] bg-black/[0.96]">
+    <main className="bg-black/[0.96] bg-grid-white/[0.02]">
       <MaxWidthWrapper>
         <Hero />
         <FeatureCourses />
         <WhyChooseUs />
+        <Testimonials />
+        <Webinar />
       </MaxWidthWrapper>
     </main>
   );
