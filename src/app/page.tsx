@@ -1,5 +1,6 @@
 import { FeatureCourses } from "@/components/FeatureCourses";
 import Hero from "@/components/Hero";
+import { Instructors } from "@/components/Instructor";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import { Testimonials } from "@/components/Testimonials";
 import { Webinar } from "@/components/Webinar";
@@ -15,6 +16,7 @@ export default function page() {
         <Testimonials />
         <Webinar />
       </MaxWidthWrapper>
+      <Instructors />
     </main>
   );
 }
